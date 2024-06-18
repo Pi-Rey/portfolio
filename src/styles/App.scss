@@ -1,0 +1,18 @@
+@import "./Reset";
+@import "./Variables";
+@import "./Landing.scss";
+@import "./Info.scss";
+
+:root {
+    font-family: $main-font;
+    font-size: 62.5%;
+  //  margin: 0 20px;
+  //  white-space: pre-line;
+  }
+
+  .hidden{
+    display: none;
+  }
+  .hiddenlanguage{
+    display: none;
+  }

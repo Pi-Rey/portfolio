@@ -1,0 +1,73 @@
+@import "./Variables";
+.section--background {
+  background-image: linear-gradient(
+      80deg,
+      #0f2d37 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    url("../images/galaxy.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; //ev. poner esto a 90 u 85vh
+}
+.section--container {
+  display: flex;
+  flex-direction: column;
+  color: $pinky;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  width: 50%;
+  gap: 2rem;
+  height: inherit;
+  @media screen and (width >= 768px) {
+    padding-top: 10rem;
+    padding-left: 6rem;
+    width: 60%;
+    gap: 3rem;
+  }
+  @media screen and (width >= 1024px) {
+    padding-top: 10rem;
+    padding-left: 8rem;
+    width: 60%;
+    gap: 3.5rem;
+  }
+  
+  &__name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.1;
+    @media screen and (width >= 768px){
+        font-size: 6rem;
+      }
+      @media screen and (width >= 1024px){
+        font-size: 8rem;
+      }
+  }
+
+  &__aka {
+    font-weight: bold;
+    font-size: 1.8rem;
+
+    @media screen and (width >= 768px){
+        font-size: 3.5rem;
+        padding-left: 2rem;
+      }
+      @media screen and (width >= 1024px){
+        font-size: 4rem;
+        padding-left: 2.5rem;
+      }
+    &--github {
+      text-decoration: none;
+      color: $pinky;
+      text-decoration: underline dotted;
+      &:hover {
+        background-color: $pinky;
+        text-decoration: none;
+        color: $dark-turquoise;
+        padding-right: 20px; //quizás hacer que esto se muestre un poco más lento
+      }
+    }
+  }
+
+}

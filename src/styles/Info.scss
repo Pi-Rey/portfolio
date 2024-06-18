@@ -1,0 +1,91 @@
+@import "./Variables";
+.info--background {
+  background-color: $darkest;
+  // height: 100vh;
+  padding-bottom: 2rem; //quizás cambiar eso cuando le ponga más paddings alt. height
+}
+.divflag {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  margin-right: 20px;
+  
+  .info--flag {
+    width: 20px;
+    text-align: right;
+    cursor: pointer;
+    @media screen and (width >= 768px) {
+      width: 30px;
+      margin-right: 50px;
+    }
+    @media screen and (width >= 1024px) {
+      width: 40px;
+      margin-right: 60px;
+    }
+  }
+}
+
+.info--article {
+  padding-top: 5rem;
+  //padding-left: 3rem;
+  width: 80%;
+  gap: 2rem;
+  font-size: 1.6rem;
+  //height: inherit;
+  //color: $greenish-grey;
+  @media screen and (width >= 768px) {
+    // padding-top: 10rem;
+    padding-left: 6rem;
+    width: 80%;
+    gap: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 300px; //ev.ajustar la altura del grid
+    font-size: 2rem;
+  }
+  @media screen and (width >= 1024px) {
+    padding-top: 10rem;
+    padding-left: 8rem;
+    width: 80%;
+    gap: 3rem;
+    font-size: 3rem;
+  }
+  &__title {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    background-color: $pinky;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    font-weight: bold;
+    color: $dark-turquoise;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    cursor: pointer;
+    @media screen and (width >= 768px) {
+      grid-column: 1/2;
+    }
+  }
+  &__paragraph {
+    border: 1px solid $pinky; //ev. quitar el borde
+    color: $pinky;
+    //  text-align: justify;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    padding: 1rem 1rem 1rem 3rem;
+    &--p {
+      border-color: none;
+      img {
+        height: 300px;
+      }
+    }
+
+    @media screen and (width >= 768px) {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      margin: 0;
+      height: fit-content;
+    }
+  }
+}
