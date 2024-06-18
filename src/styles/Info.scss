@@ -30,7 +30,7 @@
   //padding-left: 3rem;
   width: 80%;
   gap: 2rem;
-  font-size: 1.6rem;
+  font-size: $font-size-mobile;
   //height: inherit;
   //color: $greenish-grey;
   @media screen and (width >= 768px) {
@@ -41,14 +41,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 300px; //ev.ajustar la altura del grid
-    font-size: 2rem;
+    font-size: $font-size-tablet;
   }
   @media screen and (width >= 1024px) {
     padding-top: 10rem;
     padding-left: 8rem;
     width: 80%;
     gap: 3rem;
-    font-size: 3rem;
+    font-size: $font-size-computer;
   }
   &__title {
     display: block;
@@ -76,6 +76,10 @@
     padding: 1rem 1rem 1rem 3rem;
     &--p {
       border-color: none;
+      display: none;
+      @media screen and (width >= 768px) {
+        display: block;
+      }
       img {
         height: 300px;
       }

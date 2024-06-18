@@ -1,9 +1,11 @@
 // Fichero src/components/App.jsx
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import "../styles/App.scss";
 import Landing from "./Landing";
 import Info from "./Info";
-import { useState } from "react";
+import Contact from "./Contact";
+import Projects from "./Projects";
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
@@ -24,6 +26,8 @@ function App() {
           path="/info"
           element={<Info />}
         />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

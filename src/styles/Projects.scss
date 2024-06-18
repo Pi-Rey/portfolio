@@ -1,0 +1,22 @@
+@import "./Variables";
+
+.projectslist {
+    padding-left: 3rem;
+ display: flex;
+ font-size: $font-size-mobile;
+ @media screen and (width >= 768px) {
+    padding-left: 6rem;
+    font-size: $font-size-tablet;
+ }
+ @media screen and (width >= 1024px) {
+    padding-left: 8rem;
+    font-size: $font-size-computer;
+ }
+  &--item {
+    &__div {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
