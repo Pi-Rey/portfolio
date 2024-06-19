@@ -2,12 +2,11 @@ import Contact from "./Contact";
 import Info from "./Info";
 import PropTypes from "prop-types";
 import Projects from "./Projects";
-import Game from "./Game";
 import Menu from "./Menu";
 
 function Landing({ isEnglish, changeLanguage }) {
   return (
-    <section className="section--background">
+    <section id="landing" className="section--background">
       <div className="section--container">
         <h1 className="section--container__name">Pilar Rey Rodríguez</h1>
         <h2 className="section--container__aka">
@@ -21,14 +20,13 @@ function Landing({ isEnglish, changeLanguage }) {
           </a>
         </h2>
       </div>
-      <Menu         isEnglish={isEnglish}
+      <Menu isEnglish={isEnglish}
         changeLanguage={changeLanguage}/>
-      <Game/>
-      <Info
+      <Info 
         isEnglish={isEnglish}
       />
       <Projects />
-      <Contact />
+      <Contact  />
     </section>
   );
 }

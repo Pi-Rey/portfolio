@@ -1,31 +1,99 @@
 @import "./Variables";
-.overfield{
-    border: 1px black solid;
-width: fit-content;
+// .sectiongame{
+//     background-color: rgba(0, 0, 0, 0.432);
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+// }
+
+.sectiongame {
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* places the modal overlay between the main page and the modal dialog*/
+  background-color: #00000080;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+  .modal {
+    min-width: fit-content;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: 2px #000 solid;
+  background-color: $pinky-contrast;
+
+  z-index: 3; /* places the modal dialog on top of everything else */
+  position: fixed;
+  top: 25%;
+  left: 20%; //quizás no ajustar esto a mano, sino cambiar el % del width del .modal para ajustarlo a % o vw
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.div-row{
-    width: 90px;
-    height: 30px;
-    display: flex;
-    gap: 2px;
+.modal .btn-play {
+  text-align: center;
 }
-.div-column{
-   border: 1px solid purple;
-   width: 30px;
-   height: 30px;
-   text-align: center;
-   align-content: center;
-   color:azure;
-   background-color: azure;
 }
-.mine{
-    background-color: purple;
+
+
+
+.modalCloseButton {
+  float: right;
+  position: absolute;
+  top: 10px;
+  left: 92%;
+  height: 25px;
 }
-.notmine{
-    background-color: grey;
-    color:grey;
+// .modalCloseButton img {
+// 	border:0;
+// }
+
+.screen-reader-offscreen {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
 }
-.victory{
-    background-color: antiquewhite;
-    color:antiquewhite;  
+
+.overfield {
+  border: 1px black solid;
+  width: fit-content;
+  font-size: 1px;
+}
+.div-row {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  gap: 2px;
+}
+.div-column {
+  border: 1px solid purple;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  color: azure;
+  background-color: azure;
+}
+.mine {
+  background-color: purple;
+}
+.notmine {
+  background-color: grey;
+  color: grey;
+}
+.victory {
+  background-color: antiquewhite;
+  color: antiquewhite;
 }

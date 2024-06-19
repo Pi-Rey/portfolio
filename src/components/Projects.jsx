@@ -1,18 +1,27 @@
+import poemLanding from "../images/poeta-landing.png";
+import apiLanding from "../images/api-landing.png";
+
 function Projects() {
   const array = [ //array falso para probar
     {
-      name: "proyecto1",
+      name: "¿Qué poema eres hoy?",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio nemo eos earum officia sunt non aut dolorem adipisci quia, quam perferendis quaerat quae fugiat, quasi vitae corporis voluptatum delectus.",
       image:
-        "https://images.ctfassets.net/i01duvb6kq77/4U8dFhx5CXTzAluB9cvidF/0a2bd682217cbf42cf2d9ae1d16ceddd/San_Isidro?w=1100&q=80&fm=webp",
-      alt: "dsfwgrwggw",
+        poemLanding,
+      alt: "página de inicio de la web de poemas",
+      project: true,
+      code: true,
+      others: false
     },
     {
-      name: "proyecto2",
+      name: "API Rest",
       desc: " Veniam eveniet ut laboriosam tempore temporibus ab molestiae quae adipisci. Adipisci, laborum ipsum. Asperiores, autem? Suscipit officia nisi quam magnam, velit commodi doloremque deserunt, harum minus hic sapiente optio temporibus!",
       image:
-        "https://images.ctfassets.net/i01duvb6kq77/WLIFaVWkjyfOAKCHmDJve/834db781adfec6cd213fee39781ad517/feature-san-isidro-madrid.jpg?w=1100&q=80&fm=webp",
-      alt: "dsfwgrwggw",
+        apiLanding,
+      alt: "front-end básico para hacer CRUD a una API",
+      project: false,
+      code: true,
+      others: false
     },
     {
       name: "proyecto3",
@@ -45,8 +54,8 @@ function Projects() {
 
 
   return (
-  <section className="projectslist">
-{html}
+  <section id="projects"  className="projectslist">
+    {html}
   </section>
   );
 }

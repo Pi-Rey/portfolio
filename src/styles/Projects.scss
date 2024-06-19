@@ -3,6 +3,7 @@
 .projectslist {
     padding-left: 3rem;
  display: flex;
+ flex-wrap: wrap;
  font-size: $font-size-mobile;
  @media screen and (width >= 768px) {
     padding-left: 6rem;

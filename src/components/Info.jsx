@@ -26,7 +26,7 @@ function Info({ isEnglish }) {
 
 
   return (
-    <section className="info--background">
+    <section id="info" className="info--background">
      
       <article className={`info--article ${isEnglish ? "hiddenlanguage" : ""}`}>
         <h3 className="info--article__title" onMouseOver={handleOver1}>

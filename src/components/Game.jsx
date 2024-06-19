@@ -1,22 +1,22 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-function Game() {
-  const [array, setArray] = useState([
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-  ]);
+function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, message, setMessage}) {
+
   const [isHidden, setIsHidden] = useState(true);
-  const [message, setMessage] = useState("");
-  const [isVictory, setIsVictory] = useState(false)
+
 
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
   const createArray = () => {
-
+    setArray([
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1],
+      ])
     const newArray = array.map((row) => [...row]);
     const row = getRandomInt(4);
     const column = getRandomInt(3);
@@ -84,10 +84,25 @@ function Game() {
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
+    setMessage("Ánimo!")
   };
 
+  const handleClose = (ev) =>{
+    ev.preventDefault()
+    setIsVictory(false);
+    const newArray = createArray();
+    setArray(newArray);
+    //console.log(array);
+    setIsHidden(false);
+    renderGame(array);
+    setMessage("Encuentra la mina!")
+    setIsHiddenGame(true)
+  }
+
   return (
-    <section>
+    <section className="sectiongame">
+        <div className="modal">
+            <button className="modalCloseButton" onClick={handleClose}>x</button>
       <button className="btn-play" onClick={handleGame}>
         Iniciar partida
       </button>
@@ -96,8 +111,19 @@ function Game() {
       <section className={`overfield ${isHidden ? "hidden" : ""}`}>
         {renderGame(array)}
       </section>
+      </div>
     </section>
   );
 }
+
+Game.propTypes = {
+    setIsHiddenGame: PropTypes.func,
+    array: PropTypes.array,
+     setArray: PropTypes.func,
+     isVictory: PropTypes.bool,
+     setIsVictory: PropTypes.func,
+     message: PropTypes.string,
+     setMessage: PropTypes.func,
+  };
 
 export default Game;
