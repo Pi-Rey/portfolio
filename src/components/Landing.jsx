@@ -2,8 +2,10 @@ import Contact from "./Contact";
 import Info from "./Info";
 import PropTypes from "prop-types";
 import Projects from "./Projects";
+import Game from "./Game";
+import Menu from "./Menu";
 
-function Landing({ isEnglish, setIsEnglish, changeLanguage }) {
+function Landing({ isEnglish, changeLanguage }) {
   return (
     <section className="section--background">
       <div className="section--container">
@@ -19,10 +21,11 @@ function Landing({ isEnglish, setIsEnglish, changeLanguage }) {
           </a>
         </h2>
       </div>
+      <Menu         isEnglish={isEnglish}
+        changeLanguage={changeLanguage}/>
+      <Game/>
       <Info
         isEnglish={isEnglish}
-        setIsEnglish={setIsEnglish}
-        changeLanguage={changeLanguage}
       />
       <Projects />
       <Contact />
@@ -32,7 +35,7 @@ function Landing({ isEnglish, setIsEnglish, changeLanguage }) {
 
 Landing.propTypes = {
   isEnglish: PropTypes.bool,
-  setIsEnglish: PropTypes.func,
+
   changeLanguage: PropTypes.func,
 };
 export default Landing;

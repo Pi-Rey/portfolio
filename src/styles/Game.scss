@@ -1,0 +1,31 @@
+@import "./Variables";
+.overfield{
+    border: 1px black solid;
+width: fit-content;
+}
+.div-row{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    gap: 2px;
+}
+.div-column{
+   border: 1px solid purple;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   align-content: center;
+   color:azure;
+   background-color: azure;
+}
+.mine{
+    background-color: purple;
+}
+.notmine{
+    background-color: grey;
+    color:grey;
+}
+.victory{
+    background-color: antiquewhite;
+    color:antiquewhite;  
+}

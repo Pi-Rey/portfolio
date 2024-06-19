@@ -6,6 +6,7 @@ import Landing from "./Landing";
 import Info from "./Info";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Game from "./Game";
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
@@ -22,6 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Landing isEnglish={ isEnglish } setIsEnglish={ setIsEnglish } changeLanguage={changeLanguage} />} />
+        <Route path="/game" element={<Game/>}/>
         <Route
           path="/info"
           element={<Info />}

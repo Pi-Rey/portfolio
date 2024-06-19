@@ -1,0 +1,51 @@
+@import "./Variables";
+
+.divflag {
+    display: flex;
+    justify-content: flex-end;
+
+    //margin-right: 20px;
+    
+    .info--flag {
+      width: 20px;
+      text-align: right;
+      cursor: pointer;
+      @media screen and (width >= 768px) {
+        width: 30px;
+     //   margin-right: 50px;
+      }
+      @media screen and (width >= 1024px) {
+        width: 40px;
+     //   margin-right: 60px;
+      }
+    }
+  }
+.menu {
+  display: block;
+  width: fit-content;
+  border: 2px solid $pinky;
+  background-color: $turquoise;
+  font-size: $font-size-mobile;
+  text-transform: uppercase;
+  padding: 10px;
+  color: $pinky-contrast;
+  //tablet: 
+  top:10px;
+  right: 10px;
+  position: fixed;
+ // z-index: 1000;
+ &--title{
+    text-align: end;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+ }
+  &--ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

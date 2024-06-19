@@ -4,26 +4,6 @@
   // height: 100vh;
   padding-bottom: 2rem; //quizás cambiar eso cuando le ponga más paddings alt. height
 }
-.divflag {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 20px;
-  margin-right: 20px;
-  
-  .info--flag {
-    width: 20px;
-    text-align: right;
-    cursor: pointer;
-    @media screen and (width >= 768px) {
-      width: 30px;
-      margin-right: 50px;
-    }
-    @media screen and (width >= 1024px) {
-      width: 40px;
-      margin-right: 60px;
-    }
-  }
-}
 
 .info--article {
   padding-top: 5rem;
