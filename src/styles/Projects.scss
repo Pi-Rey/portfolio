@@ -1,23 +1,79 @@
 @import "./Variables";
 
 .projectslist {
-    padding-left: 3rem;
- display: flex;
- flex-wrap: wrap;
- font-size: $font-size-mobile;
- @media screen and (width >= 768px) {
+  margin-top: 20px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $font-size-mobile;
+  gap: 20px;
+  @media screen and (width >= 768px) {
     padding-left: 6rem;
     font-size: $font-size-tablet;
- }
- @media screen and (width >= 1024px) {
+  }
+  @media screen and (width >= 1024px) {
     padding-left: 8rem;
     font-size: $font-size-computer;
- }
+  }
+//   &--link{
+//     text-decoration: none;
+//   }
   &--item {
+    border: 2px solid $darkest;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    @media screen and (width >= 768px) {
+        width: 48%;
+    }
+    @media screen and (width >= 1024px) {
+        width: 31%;
+    }
+    &__name{
+        font-weight: bold;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     &__div {
+    
       img {
-        height: 30px;
+        border-radius: 10px;
+        height: 100px;
+        box-shadow: 2px 5px 9px 3px rgba(0, 0, 0, 0.2);
+        margin-top: 5px;
+        @media screen and (width >= 768px) {
+            height: 120px;
+            margin-top: 10px;
+        }
+        @media screen and (width >= 1024px) {
+            height: 150px;
+            margin-top: 15px;
+        }
       }
     }
+    &__desc {
+      margin-top: 5px;
+    }
+    &__type {
+        display: inline-block;
+        text-align: center;
+        margin-top: 5px;
+    //    text-transform: uppercase;
+        font-weight: bold;
+        opacity: 0.5;
+      }
   }
+}
+.code {
+  background-color: $darkest;
+  color: $pinky;
+}
+.project {
+  background-color: $pinky-contrast;
+  color: $turquoise;
+}
+.others {
+  background-color: $greenish-grey;
+  color: $earth;
 }
