@@ -14,7 +14,7 @@ function Landing({ isEnglish, changeLanguage }) {
     //array falso para probar
     {
       name: "¿Qué poema eres hoy?",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio nemo eos earum officia sunt non aut dolorem adipisci quia, quam perferendis quaerat quae fugiat, quasi vitae corporis voluptatum delectus.",
+      desc: "¡Haz un pequeño test y recibe una recomendación poética!\n\nHTML5 - CSS3 - SASS - JAVASCRIPT ES6 - REACT JS",
       image: poemLanding,
       alt: "página de inicio de la web de poemas",
       url: "https://pi-rey.github.io/que-poeta-eres/#/",
@@ -24,7 +24,7 @@ function Landing({ isEnglish, changeLanguage }) {
     },
     {
       name: "API Rest",
-      desc: " Veniam eveniet ut laboriosam tempore temporibus ab molestiae quae adipisci. Adipisci, laborum ipsum. Asperiores, autem? Suscipit officia nisi quam magnam, velit commodi doloremque deserunt, harum minus hic sapiente optio temporibus!",
+      desc: "Levanta esta API REST en tu dispositivo y realiza\noperaciones CRUD previo registro.\n\nNODE.JS - EXPRESS.JS - JAVASCRIPT ES6- MYSQL - GIT- POSTMAN",
       image: apiLanding,
       alt: "front-end básico para hacer CRUD a una API",
       url: "https://github.com/Pi-Rey/modulo-4-evaluacion-final-bpw-Pi-Rey",
@@ -34,7 +34,7 @@ function Landing({ isEnglish, changeLanguage }) {
     },
     {
       name: "Web accessibility and people with visual impairments",
-      desc: "  Officia est maxime cumque soluta laborum doloribus atque quo perspiciatis illo vel ipsa quasi animi iure, suscipit saepe facilis aperiam voluptatem amet provident odit sint. Quos, natus! A, ut voluptates!",
+      desc: "This thesis aims to explore the perspectives of people with visual impairments about the internet and web accessibility. How the current status of web accessibility is and how people with visual impairments use the internet are important topics in a society that is more and more digitalized.",
       image: circleUsage,
       alt: `Esquema presente en la publicación. Representa el ciclo de uso del internet y tiene tres partes: "assistive technologies", "educational support" y "experience"`,
       url: "https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-480510",

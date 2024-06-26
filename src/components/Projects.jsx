@@ -18,11 +18,12 @@ function Projects({projectsArray}) {
     return (
       <article className={`projectslist--item ${addType(item)} `} key={i}>
         <a href={item.url} target="_blank">
-          <h4 className={`projectslist--item__name `}>{item.name}</h4>
 
           <div className="projectslist--item__div">
             <img src={item.image} alt={item.alt} />
           </div>
+          <h4 className={`projectslist--item__name `}>{item.name}</h4>
+
           <p className="projectslist--item__desc">{item.desc}</p>
           <p className="projectslist--item__type">type: {addType(item)}</p>
         </a>

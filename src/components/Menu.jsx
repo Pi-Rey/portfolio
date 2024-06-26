@@ -73,7 +73,7 @@ function Menu({ changeLanguage, isEnglish }) {
         <ul className="menu--ul">
           <li onClick={() => doScroll("landing")}>Portada</li>
           <li onClick={() => doScroll("info")}>Info</li>
-          <li onClick={() => doScroll("projects")}>Proyectos</li>
+          <li onClick={() => doScroll("filter")}>Proyectos</li>
           <li className="littlegame" onClick={handleOpenGame}> Pausa para un juego</li>
           <li onClick={() => doScroll("contact")}>Contacto</li>
         </ul>
@@ -82,7 +82,7 @@ function Menu({ changeLanguage, isEnglish }) {
         <ul className="menu--ul">
           <li onClick={() => doScroll("landing")}>Home</li>
           <li onClick={() => doScroll("info")}>Info</li>
-          <li onClick={() => doScroll("projects")}>Projects</li>
+          <li onClick={() => doScroll("filter")}>Projects</li>
           <li className="littlegame" onClick={handleOpenGame}>A silly little game</li>
           <li onClick={() => doScroll("contact")}>Contact</li>
         </ul>
