@@ -22,7 +22,7 @@ Este proyecto en construcción se convertirá en mi primer portfolio. Se planea 
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/Pi-Rey/portfolio_1.git
+    git clone https://github.com/Pi-Rey/portfolio.git
     ```
 
 2. Instala las dependencias:
