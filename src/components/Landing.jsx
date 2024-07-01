@@ -7,6 +7,7 @@ import Filter from "./Filter";
 import poemLanding from "../images/poeta-landing.png";
 import apiLanding from "../images/api-landing.png";
 import circleUsage from "../images/circle_usage_internet.png";
+import scoreScreenshoot from "../images/score-statistik.png";
 import { useState } from "react";
 
 function Landing({ isEnglish, changeLanguage }) {
@@ -20,11 +21,11 @@ function Landing({ isEnglish, changeLanguage }) {
       url: "https://pi-rey.github.io/que-poeta-eres/#/",
       project: true,
       code: true,
-      others: false,
+      others: false
     },
     {
       name: "API Rest",
-      desc: "Levanta esta API REST en tu dispositivo y realiza\noperaciones CRUD previo registro.\n\nNODE.JS - EXPRESS.JS - JAVASCRIPT ES6- MYSQL - GIT- POSTMAN",
+      desc: "Levanta esta API REST en tu dispositivo y realiza\noperaciones CRUD previo registro.\n\nNODE.JS - EXPRESS.JS - JAVASCRIPT ES6- MYSQL - GIT - POSTMAN",
       image: apiLanding,
       alt: "front-end básico para hacer CRUD a una API",
       url: "https://github.com/Pi-Rey/modulo-4-evaluacion-final-bpw-Pi-Rey",
@@ -34,7 +35,7 @@ function Landing({ isEnglish, changeLanguage }) {
     },
     {
       name: "Web accessibility and people with visual impairments",
-      desc: "This thesis aims to explore the perspectives of people with visual impairments about the internet and web accessibility. How the current status of web accessibility is and how people with visual impairments use the internet are important topics in a society that is more and more digitalized.",
+      desc: "This thesis aims to explore the perspectives of people with visual impairments about the internet and web accessibility qualitative research methods.",
       image: circleUsage,
       alt: `Esquema presente en la publicación. Representa el ciclo de uso del internet y tiene tres partes: "assistive technologies", "educational support" y "experience"`,
       url: "https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-480510",
@@ -42,16 +43,16 @@ function Landing({ isEnglish, changeLanguage }) {
       code: false,
       others: true,
     },
-    // {
-    //     name: "proyecto3",
-    //     desc: " Minima sit reprehenderit porro nostrum officia odio voluptates tempora, possimus numquam, cum consequuntur vitae magni cumque exercitationem quibusdam beatae sint in, alias facere dolore! Aliquid quia nulla amet deserunt illum.",
-    //     image:
-    //       "https://images.ctfassets.net/i01duvb6kq77/11DmQUt3xqifmn8Q9ut9HK/0a12c8a1780c666060acfa1366de2df7/Europeana.eu-2022711-urn_repox_ist_utl_pt_MH_385980-1467cf3f9bb9381f607a6cb8f842c308.jpg?w=1100&q=80&fm=webp",
-    //     alt: "dsfwgrwggw",
-    //     project: false,
-    //     code: false,
-    //     others: true,
-    //   },
+    {
+        name: "Estadísticas de calificación académica",
+        desc: "Este programa C++ calcula las calificaciones en función de las notas ingresadas ​​para varias materias.\n\nC++",
+        image: scoreScreenshoot,
+        alt: `Captura de pantalla de la consola mostrando el programa ejecutado`,
+        url: "https://github.com/Pi-Rey/score_statistics",
+        project: false,
+        code: true,
+        others: false,
+      }
   ];
   const [inputType, setInputType] = useState("");
 
