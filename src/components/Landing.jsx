@@ -60,6 +60,7 @@ function Landing({ isEnglish, changeLanguage }) {
   // const reset = () => {
   //     setInputType("");
   //   };
+  
 
   const filteredProjects = projectsArray.filter((project) => {
     if (project[inputType] === true) {
