@@ -3,7 +3,7 @@
 
 Este proyecto en construcción se convertirá en mi primer portfolio. Se planea que sea una web responsive, colorida, dinámica y construida teniendo siempre presenta la accesibilidad web. 
 
-![Captura de pantalla de la landing. El fondo es la imagen de una galaxia y sobre él se muestra el texto "PILAR REY RODRÍGUEZ a.k.a. Pi-Rey" junto al símbolo de github. En la esquina superior derecha hay un menú desplegado con las siguientes opciones en inglés "home", "info", "projects", "a silly little game" y "contact".](https://github.com/Pi-Rey/portfolio_1/blob/7e54dc3e24e0b20d050961dda09f6e054ecc5950/images/landing.png)
+![Captura de pantalla de la landing. El fondo es la imagen de una galaxia y sobre él se muestra el texto "PILAR REY RODRÍGUEZ a.k.a. Pi-Rey" junto al símbolo de github. En la esquina superior derecha hay un menú desplegado con las siguientes opciones en inglés "home", "info", "projects", "a silly little game" y "contact".](https://github.com/Pi-Rey/portfolio/blob/16809bb6ed470e97b8a89f12c65632f3601dc4c0/images/landing.png)
 
 ## Estructura del Proyecto
 
