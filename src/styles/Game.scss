@@ -1,21 +1,11 @@
 @import "./Variables";
-// .sectiongame{
-//     background-color: rgba(0, 0, 0, 0.432);
-//     width: 100vw;
-//     height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     position: fixed;
-// }
 
 .sectiongame {
   width: 100%;
   height: 100%;
   z-index: 2; /* places the modal overlay between the main page and the modal dialog*/
   background-color: #00000080;
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -23,40 +13,70 @@
   margin: 0;
   padding: 0;
   .modal {
-    min-width: fit-content;
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  border: 2px #000 solid;
-  background-color: $pinky-contrast;
+    //  min-width: fit-content;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 2px #000 solid;
+    background-color: $pinky-contrast;
 
-  z-index: 3; /* places the modal dialog on top of everything else */
-  position: fixed;
-  top: 25%;
-  left: 20%; //quizás no ajustar esto a mano, sino cambiar el % del width del .modal para ajustarlo a % o vw
-     display: flex;
+    z-index: 3; /* places the modal dialog on top of everything else */
+    position: fixed;
+    top: 25vh;
+    left: calc(50vw - 100px);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .modal .btn-play {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $dark-turquoise;
+    color: $pinky;
+    font-weight: bolder;
+    margin: 5px 0;
+    &:hover {
+      box-shadow: 0px 0px 9px 9px rgb(122 66 129 / 31%);
+    }
+    
+  @media screen and (width >= 768px) {
+    //  padding-left: 6rem;
+    font-size: $font-size-tablet;
+  }
+  @media screen and (width >= 1024px) {
+    //  padding-left: 8rem;
+    font-size: $font-size-computer;
+  }
+  }
 }
-.modal .btn-play {
-  text-align: center;
-}
-}
-
-
 
 .modalCloseButton {
   float: right;
   position: absolute;
-  top: 10px;
-  left: 92%;
-  height: 25px;
+  top: 8px;
+  right: 8px;
+  height: 20px;
+  width: 20px;
+  font-size: $font-size-mobile;
+  color: $earth;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 0px 15px 10px rgba(109, 49, 39, 0.452);
+  }
+  
+  @media screen and (width >= 768px) {
+    font-size: $font-size-tablet; //ajustar los tamaños de la caja a esto. 
+  }
+  @media screen and (width >= 1024px) {
+    font-size: $font-size-computer;
+  }
 }
-// .modalCloseButton img {
-// 	border:0;
-// }
 
 .screen-reader-offscreen {
   position: absolute;
@@ -96,4 +116,15 @@
 .victory {
   background-color: antiquewhite;
   color: antiquewhite;
+}
+.msg{
+    margin: 5px;
+    font-size: $font-size-mobile;
+    background-color: red;
+    @media screen and (width >= 768px) {
+        font-size: $font-size-tablet;
+      }
+      @media screen and (width >= 1024px) {
+        font-size: $font-size-computer;
+      }
 }
