@@ -17,7 +17,7 @@ function Menu({ changeLanguage, isEnglish }) {
 
   const handleMenu = (ev) => {
     ev.preventDefault();
-    setIsHiddenMenu(!isHiddenMenu);
+    setIsHiddenMenu(!isHiddenMenu); //esto lo tengo que revisar porque no va perfecto
   };
   const handleLanguage = (ev) => {
     ev.preventDefault();

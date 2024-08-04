@@ -41,8 +41,10 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
    // console.log(isMine);
     if (isMine) {
       
-      setMessage("Has ganado :). Haz click en Iniciar partida para jugar de nuevo");
+      setMessage(`¡Has ganado!
+        Haz click en Iniciar partida para jugar de nuevo.`);
       setIsVictory(true);
+      setIsHidden(true);
       target.classList.add("mine");
       setArray([
         [1, 1, 1],
@@ -84,7 +86,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
-    setMessage("Ánimo!")
+    setMessage("¡Ánimo!")
   };
 
   const handleClose = (ev) =>{
@@ -102,7 +104,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
   return (
     <section className="sectiongame">
         <div className="modal">
-            <button className="modalCloseButton" onClick={handleClose}>x</button>
+            <button className="modalCloseButton" onClick={handleClose}><p>X</p></button>
       <button className="btn-play" onClick={handleGame}>
         Iniciar partida
       </button>
