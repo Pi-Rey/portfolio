@@ -34,16 +34,6 @@ function Landing({ isEnglish, changeLanguage }) {
       others: false,
     },
     {
-      name: "Web accessibility and people with visual impairments",
-      desc: "This thesis aims to explore the perspectives of people with visual impairments about the internet and web accessibility qualitative research methods.",
-      image: circleUsage,
-      alt: `Esquema presente en la publicación. Representa el ciclo de uso del internet y tiene tres partes: "assistive technologies", "educational support" y "experience"`,
-      url: "https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-480510",
-      project: false,
-      code: false,
-      others: true,
-    },
-    {
         name: "Estadísticas de calificación académica",
         desc: "Este programa C++ calcula las calificaciones en función de las notas ingresadas ​​para varias materias.\n\nC++",
         image: scoreScreenshoot,
@@ -52,6 +42,15 @@ function Landing({ isEnglish, changeLanguage }) {
         project: false,
         code: true,
         others: false,
+      },   {
+        name: "Web accessibility and people with visual impairments",
+        desc: "This thesis aims to explore the perspectives of people with visual impairments about the internet and web accessibility qualitative research methods.",
+        image: circleUsage,
+        alt: `Esquema presente en la publicación. Representa el ciclo de uso del internet y tiene tres partes: "assistive technologies", "educational support" y "experience"`,
+        url: "https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-480510",
+        project: false,
+        code: false,
+        others: true,
       }
   ];
   const [inputType, setInputType] = useState("");
