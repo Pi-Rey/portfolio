@@ -1,7 +1,6 @@
 @import "./Variables";
 .info--background {
   background-color: $darkest;
-  // height: 100vh;
   padding-bottom: 2rem; //quizás cambiar eso cuando le ponga más paddings alt. height
 }
 
@@ -37,6 +36,7 @@
     background-color: $pinky;
     margin-bottom: 1rem;
     padding-left: 3rem;
+    padding-right: 0.5rem;
     font-weight: bold;
     color: $dark-turquoise;
     text-transform: uppercase;

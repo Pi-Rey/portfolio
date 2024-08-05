@@ -82,20 +82,20 @@
   }
 }
 .web {
-  background-color: $pinky-contrast;
-  color: $turquoise;
+  background-color: $pinky;
+  color: $darkest;
   &:hover {
     background: linear-gradient(
       180deg,
-      rgb(255, 240, 247) 50%,
-      $pinky-contrast 100%
+      rgb(219, 219, 207) 50%,
+      $pinky 100%
     );
   }
 }
 .other {
-  background-color: $greenish-grey;
-  color: $earth;
+  background-color: $dark-turquoise;
+  color: $pinky-contrast;
   &:hover {
-    background: linear-gradient(180deg, #b6e4dee0 50%, $greenish-grey 100%);
+    background: linear-gradient(180deg, rgba(55, 33, 11, 0.68) 50%, $dark-turquoise 100%);
   }
 }

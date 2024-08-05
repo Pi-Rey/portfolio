@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <ul className="contact--ul">
         <li>
           <a
@@ -8,7 +8,7 @@ function Contact() {
             href="mailto:pilar.rrdgz@gmail.com"
             target="_blank"
           >
-            email
+            email <i className="fa-solid fa-envelope"></i>
           </a>
         </li>
 
@@ -18,7 +18,7 @@ function Contact() {
             href="https://github.com/Pi-Rey"
             target="_blank"
           >
-            github
+            github <i className="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
@@ -27,7 +27,7 @@ function Contact() {
             href="https://www.linkedin.com/in/pilar-rey-rodriguez/"
             target="_blank"
           >
-            linkedin
+            linkedin <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
       </ul>

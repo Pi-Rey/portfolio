@@ -42,7 +42,7 @@ function Info({ isEnglish }) {
             isHidden1 && isHidden2 ? "" : "hidden"
           }`}
         >
-          <img src={skullGif} alt="gif de una calavera fumando" />
+          <img src={womanLoom} alt="imagen de una mujer usando un telar" />
         </p>
         <h3 className="info--article__title" onMouseOver={handleOver2}>
           Tecnologías trabajadas
@@ -69,7 +69,7 @@ function Info({ isEnglish }) {
             isHidden1 && isHidden2 ? "" : "hidden"
           }`}
         >
-          <img src={skullGif} alt="gif de una calavera fumando" />
+          <img src={womanLoom} alt="photo of a woman using a loom" />
         </p>
         <h3 className="info--article__title" onMouseOver={handleOver2}>
           ENGLISH!

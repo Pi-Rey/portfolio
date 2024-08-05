@@ -2,14 +2,23 @@
 .section--background {
   background-image: linear-gradient(
       80deg,
-      #0f2d37 0%,
-      rgba(0, 0, 0, 0) 70%
+      rgb(15, 46, 56) 0%,
+      rgba(255, 255, 255, 0.200) 70%
     ),
-    url("../images/galaxy.jpg");
+    url("../images/blancas-medium.jpg");
+  //  url("../images/galaxy.jpg");
+  @media screen and (width >= 1024px) {
+    background-image:linear-gradient(
+        80deg,
+        rgb(15, 46, 56) 0%,
+        rgba(255, 255, 255, 0.200) 70%
+      ),
+      url("../images/blancas-big.jpg");
+  }
+
   background-position: center;
   background-size: cover;
   height: 100vh; //ev. poner esto a 90 u 85vh
-
 }
 .section--container {
   display: flex;
@@ -32,32 +41,32 @@
     width: 60%;
     gap: 3.5rem;
   }
-  
+
   &__name {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3rem;
     line-height: 1.1;
-    @media screen and (width >= 768px){
-        font-size: 6rem;
-      }
-      @media screen and (width >= 1024px){
-        font-size: 8rem;
-      }
+    @media screen and (width >= 768px) {
+      font-size: 6rem;
+    }
+    @media screen and (width >= 1024px) {
+      font-size: 8rem;
+    }
   }
 
   &__aka {
     font-weight: bold;
     font-size: 1.8rem;
 
-    @media screen and (width >= 768px){
-        font-size: 3.5rem;
-        padding-left: 2rem;
-      }
-      @media screen and (width >= 1024px){
-        font-size: 4rem;
-        padding-left: 2.5rem;
-      }
+    @media screen and (width >= 768px) {
+      font-size: 3.5rem;
+      padding-left: 2rem;
+    }
+    @media screen and (width >= 1024px) {
+      font-size: 4rem;
+      padding-left: 2.5rem;
+    }
     &--github {
       text-decoration: none;
       color: $pinky;
@@ -70,5 +79,4 @@
       }
     }
   }
-
 }

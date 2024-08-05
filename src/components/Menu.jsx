@@ -33,7 +33,7 @@ function Menu({ changeLanguage, isEnglish }) {
 
   const handleOpenGame = (ev) => {
     ev.preventDefault();
-    setMessage("Mucha suerte!");
+    setMessage("¡Mucha suerte!");
     setIsVictory(false);
     setArray([
       [1, 1, 1],

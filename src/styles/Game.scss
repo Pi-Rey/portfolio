@@ -77,7 +77,7 @@
   height: 20px;
   width: 20px;
   font-size: $font-size-mobile;
-  color: $earth;
+  color: $dark-turquoise;
   font-weight: bolder;
   cursor: pointer;
   border-radius: 5px;
@@ -106,7 +106,7 @@
 }
 
 .overfield {
-  border: 1px black solid;
+  border: 1px $dark-turquoise solid;
   width: fit-content;
   font-size: 1px;
 }
@@ -115,7 +115,7 @@
   gap: 2px;
 }
 .div-column {
-  border: 1px solid purple;
+  border: 1px solid $dark-turquoise;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -132,7 +132,7 @@
   background-color: purple;
 }
 .notmine {
-  background-color: grey;
+  background-color: $turquoise;
   color: grey;
 }
 .victory {

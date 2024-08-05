@@ -10,7 +10,7 @@
   margin: auto;
   // text-align: center;
   font-size: $font-size-mobile;
-  color: $greenish-grey;
+  color: $pinky;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +24,10 @@
     font-size: $font-size-computer;
   }
   &--select {
-    background-color: $pinky-contrast;
-    color: $dark-turquoise;
+   // background-color: $pinky-contrast;
+    background-color: $turquoise;
+ //   color: $dark-turquoise;
+    color: black;
     font-size: $font-size-mobile;
     @media screen and (width >= 768px) {
       //  padding-left: 6rem;
