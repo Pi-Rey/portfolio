@@ -104,10 +104,6 @@ function Landing({ isEnglish, changeLanguage }) {
   ];
   const [inputType, setInputType] = useState("");
 
-  //resetear el valor del input
-  // const reset = () => {
-  //     setInputType("");
-  //   };
   const languageProjects = projectsArray.filter((project) => {
     return isEnglish ? project.language === 'eng' : project.language === 'spa';
   });

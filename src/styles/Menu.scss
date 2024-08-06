@@ -31,25 +31,25 @@
   z-index: 4;
   @media screen and (width >= 768px) {
     padding: 10px;
+
     top: 10px;
     right: 10px;
     font-size: $font-size-tablet;
   }
-  @media screen and (width >= 1024x) {
+  @media screen and (width >= 1024px) {
+  
     font-size: $font-size-computer;
   }
 
   &--title {
     text-align: end;
-    cursor: pointer; //FIXME: poner el cursor SOLO en la palabra menu y en la bandera
     display: flex;
     gap: 5px;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    //FIXME: ajustar la anchura para que no cambie al cambiar el idioma
-    @media screen and (width >= 768px) {
-      // width: 150px;
+    &__name{
+        cursor: pointer;
     }
   }
   &--ul {
@@ -57,6 +57,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 190px;
+    @media screen and (width >= 768px) {
+        width: 300px;
+    }
+       // width: 300px;
+    @media screen and (width >= 1024px) {
+        width: 360px;
+    }
     li {
       &:hover {
         border-left: 15px solid $pinky;
