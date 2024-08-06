@@ -1,5 +1,3 @@
-
-import skullGif from "../images/skull2.gif";
 import womanLoom from "../images/mujer_telar.jpg"; //TODO: elige una mejor xd
 import PropTypes from "prop-types";
 import { useState } from "react";
@@ -43,6 +41,7 @@ function Info({ isEnglish }) {
           }`}
         >
           <img src={womanLoom} alt="imagen de una mujer usando un telar" />
+          <span>Holahola es un span</span>
         </p>
         <h3 className="info--article__title" onMouseOver={handleOver2}>
           Tecnologías trabajadas

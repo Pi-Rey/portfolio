@@ -12,7 +12,7 @@ function Menu({ changeLanguage, isEnglish }) {
     
   ]);
   
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(isEnglish ? "Find the mine. Good luck!" : "Encuentra la mina ¡Mucha suerte!");
   const [isVictory, setIsVictory] = useState(false)
 
   const handleMenu = (ev) => {
@@ -33,7 +33,7 @@ function Menu({ changeLanguage, isEnglish }) {
 
   const handleOpenGame = (ev) => {
     ev.preventDefault();
-    setMessage("¡Mucha suerte!");
+    // setMessage(isEnglish ? "Find the mine. Good luck!" : "Encuentra la mina ¡Mucha suerte!");
     setIsVictory(false);
     setArray([
       [1, 1, 1],

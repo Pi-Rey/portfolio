@@ -41,8 +41,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
    // console.log(isMine);
     if (isMine) {
       
-      setMessage(`¡Has ganado!
-        Haz click en Iniciar partida para jugar de nuevo.`);
+      setMessage("¡Has ganado!\nHaz click en Iniciar partida para jugar de nuevo.");
       setIsVictory(true);
       setIsHidden(true);
       target.classList.add("mine");
@@ -83,6 +82,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     setIsVictory(false);
     const newArray = createArray();
     setArray(newArray);
+    
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
