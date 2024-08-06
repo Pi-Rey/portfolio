@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, message, setMessage}) {
-
+function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, message, setMessage, isEnglish}) {
+//FIXME: lo que queda del inglés, que es el mensaje inicial, básicamente. 
   const [isHidden, setIsHidden] = useState(true);
 
 
@@ -41,7 +41,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
    // console.log(isMine);
     if (isMine) {
       
-      setMessage("¡Has ganado!\nHaz click en Iniciar partida para jugar de nuevo.");
+      setMessage(isEnglish ? "You've won!\nClick Start Game to play again.": "¡Has ganado!\nHaz click en Iniciar partida para jugar de nuevo.");
       setIsVictory(true);
       setIsHidden(true);
       target.classList.add("mine");
@@ -55,7 +55,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
      // setIsHidden(!isHidden);
     } else if (isMine === false) {
       target.classList.add("notmine");
-      setMessage("Ahí no está.");
+      setMessage(isEnglish ? "There is no mine there.": "Ahí no está." );
     }
   };
 
@@ -86,7 +86,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
-    setMessage("¡Ánimo!")
+    setMessage(isEnglish ? "Come on!": "¡Ánimo!" )
   };
 
   const handleClose = (ev) =>{
@@ -97,7 +97,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
-    setMessage("Encuentra la mina!")
+   // setMessage("Encuentra la mina!") esto no funciona porque al abrise tengo otra cosa puesta en esa variable
     setIsHiddenGame(true)
   }
 
@@ -106,7 +106,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
         <div className="modal">
             <button className="modalCloseButton" onClick={handleClose}><p>X</p></button>
       <button className="btn-play" onClick={handleGame}>
-        Iniciar partida
+        {isEnglish ? "Let's play": "Iniciar partida" }
       </button>
 
       <p className="msg">{message}</p>
@@ -126,6 +126,7 @@ Game.propTypes = {
      setIsVictory: PropTypes.func,
      message: PropTypes.string,
      setMessage: PropTypes.func,
+     isEnglish: PropTypes.bool,
   };
 
 export default Game;

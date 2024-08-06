@@ -12,7 +12,7 @@ function Menu({ changeLanguage, isEnglish }) {
     
   ]);
   
-  const [message, setMessage] = useState(isEnglish ? "Find the mine. Good luck!" : "Encuentra la mina ¡Mucha suerte!");
+  const [message, setMessage] = useState("");
   const [isVictory, setIsVictory] = useState(false)
 
   const handleMenu = (ev) => {
@@ -33,7 +33,7 @@ function Menu({ changeLanguage, isEnglish }) {
 
   const handleOpenGame = (ev) => {
     ev.preventDefault();
-    // setMessage(isEnglish ? "Find the mine. Good luck!" : "Encuentra la mina ¡Mucha suerte!");
+     setMessage(`${isEnglish ? "Find the mine. Good luck!" : "Encuentra la mina ¡Mucha suerte!"}`);
     setIsVictory(false);
     setArray([
       [1, 1, 1],
@@ -89,7 +89,7 @@ function Menu({ changeLanguage, isEnglish }) {
       </nav>
     </section>
     <section className={`${isHiddenGame ? "hidden" : ""}`}>
-        < Game setIsHiddenGame={setIsHiddenGame} array={array} setArray={setArray} isVictory={isVictory} setIsVictory={setIsVictory} message={message} setMessage={setMessage} />
+        < Game setIsHiddenGame={setIsHiddenGame} array={array} setArray={setArray} isVictory={isVictory} setIsVictory={setIsVictory} message={message} setMessage={setMessage} isEnglish={isEnglish}/>
     </section>
     </>
   );
