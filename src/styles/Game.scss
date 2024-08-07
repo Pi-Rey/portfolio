@@ -131,9 +131,11 @@
   }
 }
 .mine {
+    
   background-color: purple;
 }
 .notmine {
+    transition: background-color 1s;
   background-color: $turquoise;
   color: grey;
 }
