@@ -38,13 +38,13 @@ function Info({ isEnglish }) {
           programación con intereses amplios como el aprendizaje automático o la
           accesibilidad web.
         </p>
-        <p
+        {/* <p
           className={`info--article__paragraph--p ${
             isHidden1 && isHidden2 ? "" : "hidden"
           }`}
         >
           <img src={womanLoom} alt="imagen de una mujer usando un telar" />
-        </p>
+        </p> */}
 
         <p className={`info--article__paragraph ${isHidden2 ? "hidden" : ""}`}>
           <span className="emphasis">
@@ -74,13 +74,13 @@ function Info({ isEnglish }) {
           programming with broad interests such as machine learning or web
           accessibility.
         </p>
-        <p
+        {/* <p
           className={`info--article__paragraph--p ${
             isHidden1 && isHidden2 ? "" : "hidden"
           }`}
         >
           <img src={womanLoom} alt="photo of a woman using a loom" />
-        </p>
+        </p> */}
 
         <p className={`info--article__paragraph ${isHidden2 ? "hidden" : ""}`}>
           <span className="emphasis">
