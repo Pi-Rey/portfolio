@@ -31,11 +31,10 @@ function Info({ isEnglish }) {
           competencias técnicas
         </h3>
         <p className={`info--article__paragraph ${isHidden1 ? "hidden" : ""}`}>
-          <span className="emphasis">Desarrolladora Junior Full-Stack.</span>{" "}
-          Humanista digital.
+          <span className="emphasis">Desarrolladora Junior Full-Stack.</span>
           <br />
-          Soy un humanista digital que en los últimos años se ha volcado a la
-          programación con intereses amplios como el aprendizaje automático o la
+          Soy una humanista digital que en los últimos años se ha volcado a la
+          programación, con amplios como el aprendizaje automático o la
           accesibilidad web.
         </p>
         {/* <p
@@ -69,7 +68,6 @@ function Info({ isEnglish }) {
         </h3>
         <p className={`info--article__paragraph ${isHidden1 ? "hidden" : ""}`}>
           <span className="emphasis">Junior Full-Stack Developer.</span>
-          <br /> Digital Humanist.
           <br />I am a digital humanist who in recent years has turned to
           programming with broad interests such as machine learning or web
           accessibility.

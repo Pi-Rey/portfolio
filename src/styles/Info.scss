@@ -2,8 +2,6 @@
 .info--background {
   background-color: $darkest;
   padding-bottom: 2rem; //quizás cambiar eso cuando le ponga más paddings alt. height
-
- 
 }
 
 .info--article {
@@ -14,10 +12,11 @@
   font-size: $font-size-mobile;
   height: fit-content;
   //color: $greenish-grey;
+  line-height: 1.1;
   @media screen and (width >= 768px) {
     // padding-top: 10rem;
     padding-left: 6rem;
-   width: 90%;
+    width: 90%;
     gap: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,9 +26,11 @@
   @media screen and (width >= 1024px) {
     padding-top: 10rem;
     padding-left: 20rem;
- //   width: 80%;
- row-gap: 3rem;
+    //   width: 80%;
+    row-gap: 3rem;
     font-size: $font-size-computer;
+    //height: 490px;
+    grid-template-rows: 20px 490px; //ev.ajustar la altura del grid
   }
   &__title {
     display: block;
@@ -42,7 +43,7 @@
     font-weight: bold;
     color: $dark-turquoise;
     text-transform: uppercase;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     cursor: pointer;
     @media screen and (width >= 768px) {
       grid-column: 1/2;
@@ -75,6 +76,6 @@
     }
   }
 }
-.emphasis{
-    background-color: $dark-turquoise;
+.emphasis {
+  background-color: $dark-turquoise;
 }
