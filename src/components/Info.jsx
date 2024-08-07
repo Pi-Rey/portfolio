@@ -21,19 +21,22 @@ function Info({ isEnglish }) {
     } else setIsHidden2(true);
   };
 
-
-
   return (
     <section id="info" className="info--background">
-     
       <article className={`info--article ${isEnglish ? "hiddenlanguage" : ""}`}>
         <h3 className="info--article__title" onMouseOver={handleOver1}>
           ¿Quién soy?
         </h3>
+        <h3 className="info--article__title" onMouseOver={handleOver2}>
+          competencias técnicas
+        </h3>
         <p className={`info--article__paragraph ${isHidden1 ? "hidden" : ""}`}>
-          Aunque siempre es complicado contestar a esa pregunta, puedo decir con
-          total seguridad que soy alguien que tiene una confianza absoluta en
-          que he nacido para programar.
+          <span className="emphasis">Desarrolladora Junior Full-Stack.</span>{" "}
+          Humanista digital.
+          <br />
+          Soy un humanista digital que en los últimos años se ha volcado a la
+          programación con intereses amplios como el aprendizaje automático o la
+          accesibilidad web.
         </p>
         <p
           className={`info--article__paragraph--p ${
@@ -42,14 +45,18 @@ function Info({ isEnglish }) {
         >
           <img src={womanLoom} alt="imagen de una mujer usando un telar" />
         </p>
-        <h3 className="info--article__title" onMouseOver={handleOver2}>
-          Tecnologías trabajadas
-        </h3>
+
         <p className={`info--article__paragraph ${isHidden2 ? "hidden" : ""}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque modi
-          culpa quo, reprehenderit molestiae sequi odio eius facilis temporibus,
-          fugiat adipisci, sint tenetur mollitia. Mollitia, ex facere?
-          Provident, at repellendus!
+          <span className="emphasis">
+            HTML5, CSS3, SASS, JavaScript ES6 y React JS
+          </span>{" "}
+          para el desarrollo front-end. Para el desarrollo back-end: emplea{" "}
+          <span className="emphasis">Node.js, Express.js y MySQL.</span> Además,
+          conocimientos en programación en <span className="emphasis">C++</span>{" "}
+          y en <span className="emphasis">Python</span> enfocado a las Ciencias
+          Sociales y Humanidades. También he investigado sobre{" "}
+          <span className="emphasis">accesibilidad web</span> y personas con
+          discapacidad visual.
         </p>
       </article>
 
@@ -57,10 +64,15 @@ function Info({ isEnglish }) {
         <h3 className="info--article__title" onMouseOver={handleOver1}>
           Who am I?
         </h3>
+        <h3 className="info--article__title" onMouseOver={handleOver2}>
+          tech skills
+        </h3>
         <p className={`info--article__paragraph ${isHidden1 ? "hidden" : ""}`}>
-          Although it is always difficult to answer that question, I can say
-          with complete confidence that I am someone who has absolute confidence
-          that I was born to program.
+          <span className="emphasis">Junior Full-Stack Developer.</span>
+          <br /> Digital Humanist.
+          <br />I am a digital humanist who in recent years has turned to
+          programming with broad interests such as machine learning or web
+          accessibility.
         </p>
         <p
           className={`info--article__paragraph--p ${
@@ -69,14 +81,19 @@ function Info({ isEnglish }) {
         >
           <img src={womanLoom} alt="photo of a woman using a loom" />
         </p>
-        <h3 className="info--article__title" onMouseOver={handleOver2}>
-          ENGLISH!
-        </h3>
+
         <p className={`info--article__paragraph ${isHidden2 ? "hidden" : ""}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque modi
-          culpa quo, reprehenderit molestiae sequi odio eius facilis temporibus,
-          fugiat adipisci, sint tenetur mollitia. Mollitia, ex facere?
-          Provident, at repellendus!
+          <span className="emphasis">
+            HTML5, CSS3, SASS, JavaScript ES6 and React JS
+          </span>{" "}
+          for front-end development. For back-end development:{" "}
+          <span className="emphasis">Node.js, Express.js and MySQL.</span> In
+          addition, knowledge of programming in{" "}
+          <span className="emphasis">C++</span> and in{" "}
+          <span className="emphasis">Python</span> focused on the Social
+          Sciences and Humanities. I have also researched about{" "}
+          <span className="emphasis">web accessibility</span> and people with
+          visual impairments.
         </p>
       </article>
     </section>
@@ -85,7 +102,6 @@ function Info({ isEnglish }) {
 
 Info.propTypes = {
   isEnglish: PropTypes.bool,
-
 };
 
 export default Info;
