@@ -86,6 +86,10 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     //console.log(array);
     setIsHidden(false);
     renderGame(array);
+
+   // Añadir la clase 'notmine' a todas las casillas
+    const allCells = document.querySelectorAll('.div-column');
+allCells.forEach(cell => cell.classList.remove('notmine'));
     setMessage(isEnglish ? "Come on!": "¡Ánimo!" )
   };
 
@@ -95,7 +99,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
     const newArray = createArray();
     setArray(newArray);
     //console.log(array);
-    setIsHidden(false);
+    setIsHidden(true);
     renderGame(array);
    // setMessage("Encuentra la mina!") esto no funciona porque al abrise tengo otra cosa puesta en esa variable
     setIsHiddenGame(true)
@@ -106,7 +110,7 @@ function Game({setIsHiddenGame, array, setArray, isVictory, setIsVictory, messag
         <div className="modal">
             <button className="modalCloseButton" onClick={handleClose}><p>X</p></button>
       <button className="btn-play" onClick={handleGame}>
-        {isEnglish ? "Let's play": "Iniciar partida" }
+        {isEnglish ? "Start Game": "Iniciar partida" }
       </button>
 
       <p className="msg">{message}</p>

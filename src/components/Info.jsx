@@ -41,7 +41,6 @@ function Info({ isEnglish }) {
           }`}
         >
           <img src={womanLoom} alt="imagen de una mujer usando un telar" />
-          <span>Holahola es un span</span>
         </p>
         <h3 className="info--article__title" onMouseOver={handleOver2}>
           Tecnologías trabajadas
